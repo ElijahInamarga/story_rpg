@@ -4,3 +4,4 @@
 4 | You swim across the river and find a treasure chest. | -1 | -1
 5 | You find a hidden passageway that leads to a secret room. | 7 | -1
 6 | The cabin is empty. You find a trapdoor leading downwards. | -1 | -1
+7 | You die. | -1 | -1
