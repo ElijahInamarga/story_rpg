@@ -1,7 +1,19 @@
-1 | You wake up in a forest clearing. There are two paths. | 2 | 3
-2 | You follow the path to the left and encounter a river. | 4 | 5
-3 | You go right and find an old cabin. | 5 | 6
-4 | You swim across the river and find a treasure chest. | -1 | -1
-5 | You find a hidden passageway that leads to a secret room. | 7 | -1
-6 | The cabin is empty. You find a trapdoor leading downwards. | -1 | -1
-7 | You die. | -1 | -1
+1 | You wake up on your bed with your alarm blaring. You decide to get up and and turn it off. Do you start your day or do you go back to sleep? (Type '1' to start your day and '2' to go back to sleep) | 2 | 3
+2 | You decide to start your day. Do you brush your teeth or do you eat first? (Type '1' to brush your teeth and '2' to make breakfast)| 4 | 5
+3 | You wake up to your mom screaming at you. It turns out, you missed your 9 am class. You decide to take an uber. | 7 | -1
+4 | You decide to brush your teeth first. You then head to school. | 6 | -1
+5 | You decide to make eggs and pancakes for breakfast. Your food is so delicious, you forget that you have a 9 am class. You miss your class and decide to take an uber. | 7 | -1
+6 | Heading to school, your stomach starts rumbling. You forgot to make breakfast. Do you get food at Panda Express? (Type '1' for yes and '2' for no)| 8 | 9
+7 | You miss class but at least you made it an hour before your 11 am class. You remember you have a midterm for that class. Do you study or do you go waste your time on instagreem reels? (Type '1' to study and '2' to waste your time on your phone) | 10 | 11
+8 | You get to Panda express but the line is very long. You decide to get ready for class insead. | 12 | -1
+9 | You get to class early and chill. | 12 | -1
+10 | After studying you start heading to class. You are very confident about this midterm. | 13 | -1
+11 | You get to class on time. You are not confident about this midterm. Do you sit behind someone and try to cheat? (Type '1' for yes and '2' for no) | 14 | 15
+12 | After class you decide to study for your upcoming midterm. 15 minutes before your 11 am class you start heading to class very confidently. | 13 | -1
+13 | You are sure that you aced your exam and you go home happy. :) | -1 | -1
+14 | You decide to sit behind the smart lookin fella. You get the urge to peak. Do you give in to the urge or do you resist? (Type '1' to peak and '2' to resist) | 15 | 16
+15 | While looking at their test, the professor catches you. She starts walking towards you. Do you admit cheating or do you start thinking of an excuse? (Type '1' to admit cheating and '2' to make an excuse) | 17 | 18
+16 | You resist the urge to cheat but you fail miserablely. You go home sad. :( | -1 | -1
+17 | You admit defeat and tell her you are cheating. You get expelled from college. :( | -1 | -1
+18 | On the spot, you make up an excuse. You tell her that you just are just attracted to the smart fella. | 19 | -1
+19 | After the exam that you are sure to fail, you notice the teacher talking to the smart fella. He looks back at you and says "Ew!". You decide to quit college | -1 | -1

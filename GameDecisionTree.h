@@ -44,7 +44,7 @@ public:
     void loadStoryFromFile(const std::string& filename, char delimiter) {
         std::ifstream storyFile(filename);
         if(!storyFile.is_open()) {
-            std::cout << "Error: storyFile failed to open" << std::endl;
+            std::cout << "Error: storyFile failed to open!" << std::endl;
             return;
         }
 
@@ -78,30 +78,27 @@ public:
     void playGame() {
         Node<T>* currentPtr = rootPtr;
         while(true) {
-            std::string choice;
+            int choice;
             std::cout << currentPtr->data.description << std::endl;
             if(currentPtr->data.leftEventNumber == -1 && currentPtr->data.rightEventNumber == -1) return;
     
             if(currentPtr->data.leftEventNumber != -1 && currentPtr->data.rightEventNumber != -1) {\
-                std::cout << "Do you go left or right?" << std::endl;
                 cin >> choice;
-                if(choice == "left" || choice == "Left") {
+                if(choice == 1) {
                     currentPtr = currentPtr->left;
                 }
-                if(choice == "right" || choice == "Right") {
+                if(choice == 2) {
                     currentPtr = currentPtr->right;
                 }
                 continue;
             }
 
             if(currentPtr->data.rightEventNumber == -1) {
-                std::cout << "There is only one choice. You go left." << std::endl;
                 currentPtr = currentPtr->left;
                 continue;
             }
 
             if(currentPtr->data.leftEventNumber == -1) {
-                std::cout << "There is only one choice. You go right." << std::endl;
                 currentPtr = currentPtr->right;
                 continue;
             }
