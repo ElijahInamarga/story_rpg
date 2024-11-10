@@ -34,7 +34,7 @@ public:
         if(rightIndex >= tempList.size() || rightIndex < 0) {
             return;
         }
-
+        
         Node<T>* rightChild = &tempList[rightIndex];
         nodePtr->right = rightChild;
         treeify(rightChild);
@@ -80,8 +80,12 @@ public:
         while(true) {
             int choice;
             std::cout << currentPtr->data.description << std::endl;
-            if(currentPtr->data.leftEventNumber == -1 && currentPtr->data.rightEventNumber == -1) return;
-    
+
+            // Game ends when there are no more choices
+            if(currentPtr->data.leftEventNumber == -1 && currentPtr->data.rightEventNumber == -1) 
+                return;
+
+            // If user has 2 choices
             if(currentPtr->data.leftEventNumber != -1 && currentPtr->data.rightEventNumber != -1) {
                 cin >> choice;
                 if(choice == 1) {
@@ -93,11 +97,11 @@ public:
                 continue;
             }
 
+            // If user does not have a choice
             if(currentPtr->data.rightEventNumber == -1) {
                 currentPtr = currentPtr->left;
                 continue;
             }
-
             if(currentPtr->data.leftEventNumber == -1) {
                 currentPtr = currentPtr->right;
                 continue;
