@@ -7,6 +7,7 @@
 #include <iostream>
 #include "Node.h"
 #include "Story.h"
+#include <vector>
 
 template <typename T>
 class GameDecisionTree {
@@ -43,12 +44,18 @@ public:
             Story tempStory(description, std::stoi(eventNumber), std::stoi(leftEventNumber), std::stoi(rightEventNumber));
             Node<Story> tempNode(tempStory);
             tempList.push_back(tempNode);
+
+            // Turn vector into binary tree
         }
 
         // REMOVE TEST LATER
-        for(int i = 0; i < tempList.size(); i++) {
-            std::cout << tempList[i].data.eventNumber << tempList[i].data.description << tempList[i].data.leftEventNumber << tempList[i].data.rightEventNumber << std::endl;
-        }
+        // for(int i = 0; i < tempList.size(); i++) {
+        //     std::cout << tempList[i].data.eventNumber << tempList[i].data.description << tempList[i].data.leftEventNumber << tempList[i].data.rightEventNumber << std::endl;
+        // }
+    }
+
+    void treeify(vector *vectorPtr) {
+
     }
 
     // Function to start the game and traverse the tree based on user input
