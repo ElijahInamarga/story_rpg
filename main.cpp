@@ -16,7 +16,5 @@ int main() {
     // Start the game
     myGame.playGame();
 
-    std::cout << "Compiled!"; // DELETE LATER
-
     return 0;
 }
