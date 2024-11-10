@@ -82,7 +82,7 @@ public:
             std::cout << currentPtr->data.description << std::endl;
             if(currentPtr->data.leftEventNumber == -1 && currentPtr->data.rightEventNumber == -1) return;
     
-            if(currentPtr->data.leftEventNumber != -1 && currentPtr->data.rightEventNumber != -1) {\
+            if(currentPtr->data.leftEventNumber != -1 && currentPtr->data.rightEventNumber != -1) {
                 cin >> choice;
                 if(choice == 1) {
                     currentPtr = currentPtr->left;
