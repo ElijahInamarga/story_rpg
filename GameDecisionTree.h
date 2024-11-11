@@ -62,6 +62,7 @@ public:
             getline(lineStream, description, delimiter);
             getline(lineStream, leftEventNumber, delimiter);
             getline(lineStream, rightEventNumber, delimiter);
+            description = description.substr(1); // Ignore first space
 
             Story tempStory(description, std::stoi(eventNumber), std::stoi(leftEventNumber), std::stoi(rightEventNumber));
             Node<Story> tempNode(tempStory);
